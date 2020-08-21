@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Open+Sans&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles.css">
+  <title>Game Survey</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 id="title" class="text-center">Chao World Game Survey</h1>
+      <p id="description" class="text-center description">Thank you for taking the time to help me for user research</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <form id="form-survey">
+        <div class="form-group">
+          <label class="form-label" for="name">Name</label>
+          <input class="form-control" type="text" name="name" id="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-control" type="email" name="email" id="email" placeholder="Your Email">
+        </div>
+
+        <div class="form-group">
+          <div>
+            <label class="form-label" for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" max="2017-12-31" min="1940-01-01">
+          </div>
+
+          <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p class="form-label">What type of smartphone do you use?</p>
+          <select class="form-control" name="smartphone" id="dropdown">
+            <option disabled selected>Select your type</option>
+            <option value="android">Android</option>
+            <option value="iphone">iPhone</option>
+            <option value="other">Other</option>
+            <option value="none">None</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p class="form-label">Have you ever played a Sonic game?</p>
+          <label for="yes">
+            <input type="radio" name="yes-no" id="yes"> Yes
+          </label>
+          <label for="no">
+            <input type="radio" name="yes-no" id="no"> No
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p class="form-label">Select the platform you currently own</p>
+          <label for="xbox">
+            <input type="checkbox" name="platform" id="xbox"> Xbox
+          </label>
+          <label for="playstation">
+            <input type="checkbox" name="platform" id="playstation"> PlayStation
+          </label>
+          <label for="nintendo">
+            <input type="checkbox" name="platform" id="nintendo"> Nintendo
+          </label>
+          <label for="pc">
+            <input type="checkbox" name="platform" id="pc"> PC
+          </label>
+          <label for="none">
+            <input type="checkbox" name="platform" id="none"> None
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p class="form-label">Select the game genre you like</p>
+          <label for="action">
+            <input type="checkbox" name="game-genre" id="action"> Action
+          </label>
+          <label for="adventure">  
+            <input type="checkbox" name="game-genre" id=""> Adventure
+          </label>
+          <label for="">  
+            <input type="checkbox" name="game-genre" id="adventure"> Role-playing
+          </label>
+          <label for="simulation">  
+            <input type="checkbox" name="game-genre" id="simulation"> Simulation
+          </label>
+          <label for="strategy">  
+            <input type="checkbox" name="game-genre" id="strategy"> Strategy
+          </label>
+          <label for="sports">  
+            <input type="checkbox" name="game-genre" id="sports"> Sports
+          </label>
+          <label for="other">  
+            <input type="checkbox" name="game-genre" id="other"> Other
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p class="form-label">Any suggestion for gameplay? <span>(Optional)</span></p>
+          <textarea name="suggestion" id="suggestion" placeholder="Enter you suggestions here."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button class="form-button" name="submit" id="submit" type="submit">submit</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Coded by <a href="https://github.com/gsus0194" target="_blank" rel="noopener">Jesus Villegas</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>
