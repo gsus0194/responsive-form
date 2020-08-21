@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Open+Sans&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/over600.css">
+  <link rel="stylesheet" href="./styles/over960.css">
+  <link rel="stylesheet" href="./styles/over1280.css">
   <title>Game Survey</title>
 </head>
 
@@ -31,19 +34,21 @@
         </div>
 
         <div class="form-group">
-          <div>
-            <label class="form-label" for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday" max="2017-12-31" min="1940-01-01">
-          </div>
+          <label class="form-label" for="birthday">Birthday:</label>
+          <input class="form-control" type="date" id="birthday" name="birthday" max="2017-12-31" min="1940-01-01">
+        </div>
 
-          <div>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br>
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Other</label>
-          </div>
+        <div class="form-group">
+          <p class="form-label">Gender</p>
+          <label for="male">
+            <input class="input-radio" type="radio" id="male" name="gender" value="male"> Male
+          </label>
+          <label for="female">
+            <input class="input-radio" type="radio" id="female" name="gender" value="female"> Female
+          </label>
+          <label for="other">
+            <input class="input-radio" type="radio" id="other" name="gender" value="other"> Other
+          </label>
         </div>
 
         <div class="form-group">
@@ -60,60 +65,60 @@
         <div class="form-group">
           <p class="form-label">Have you ever played a Sonic game?</p>
           <label for="yes">
-            <input type="radio" name="yes-no" id="yes"> Yes
+            <input class="input-radio" type="radio" name="yes-no" id="yes"> Yes
           </label>
           <label for="no">
-            <input type="radio" name="yes-no" id="no"> No
+            <input class="input-radio" type="radio" name="yes-no" id="no"> No
           </label>
         </div>
 
         <div class="form-group">
           <p class="form-label">Select the platform you currently own</p>
           <label for="xbox">
-            <input type="checkbox" name="platform" id="xbox"> Xbox
+            <input class="input-checkbox" type="checkbox" name="platform" id="xbox"> Xbox
           </label>
           <label for="playstation">
-            <input type="checkbox" name="platform" id="playstation"> PlayStation
+            <input class="input-checkbox" type="checkbox" name="platform" id="playstation"> PlayStation
           </label>
           <label for="nintendo">
-            <input type="checkbox" name="platform" id="nintendo"> Nintendo
+            <input class="input-checkbox" type="checkbox" name="platform" id="nintendo"> Nintendo
           </label>
           <label for="pc">
-            <input type="checkbox" name="platform" id="pc"> PC
+            <input class="input-checkbox"t type="checkbox" name="platform" id="pc"> PC
           </label>
           <label for="none">
-            <input type="checkbox" name="platform" id="none"> None
+            <input class="input-checkbox" type="checkbox" name="platform" id="none"> None
           </label>
         </div>
 
         <div class="form-group">
           <p class="form-label">Select the game genre you like</p>
           <label for="action">
-            <input type="checkbox" name="game-genre" id="action"> Action
+            <input class="input-checkbox" type="checkbox" name="game-genre" id="action"> Action
           </label>
-          <label for="adventure">  
-            <input type="checkbox" name="game-genre" id=""> Adventure
+          <label for="adventure">
+            <input class="input-checkbox" type="checkbox" name="game-genre" id="adventure"> Adventure
           </label>
-          <label for="">  
-            <input type="checkbox" name="game-genre" id="adventure"> Role-playing
+          <label for="role">
+            <input class="input-checkbox" type="checkbox" name="game-genre" id="role"> Role-playing
           </label>
-          <label for="simulation">  
-            <input type="checkbox" name="game-genre" id="simulation"> Simulation
+          <label for="simulation">
+            <input class="input-checkbox" type="checkbox" name="game-genre" id="simulation"> Simulation
           </label>
-          <label for="strategy">  
-            <input type="checkbox" name="game-genre" id="strategy"> Strategy
+          <label for="strategy">
+            <input class="input-checkbox" type="checkbox" name="game-genre" id="strategy"> Strategy
           </label>
-          <label for="sports">  
-            <input type="checkbox" name="game-genre" id="sports"> Sports
+          <label for="sports">
+            <input class="input-checkbox" type="checkbox" name="game-genre" id="sports"> Sports
           </label>
-          <label for="other">  
-            <input type="checkbox" name="game-genre" id="other"> Other
+          <label for="other">
+            <input class="input-checkbox" type="checkbox" name="game-genre" id="other"> Other
           </label>
         </div>
 
         <div class="form-group">
-          <p class="form-label">Any suggestion for gameplay? <span>(Optional)</span></p>
-          <textarea name="suggestion" id="suggestion" placeholder="Enter you suggestions here."></textarea>
+          <p class="form-label area-label">Any suggestion for gameplay? <span>(Optional)</span></p>
+          <textarea class="input-textarea" name="suggestion" id="suggestion" placeholder="Enter you suggestions here."></textarea>
         </div>
 
         <div class="form-group">
