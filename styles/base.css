@@ -1,6 +1,9 @@
 :root {
   --font-title: 'Baloo Tamma 2', cursive;
   --font-body: 'Open Sans', sans-serif;
+  --primary-color: #03a9f4;
+  --secondary-color: rgb(4, 91, 131);
+  --bg-color: rgb(68, 67, 67);
 }
 
 * {
@@ -21,10 +24,12 @@ html {
 }
 
 body {
+  background-color: var(--bg-color);
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 1rem;
   min-width: 375px;
+  color: var(--primary-color);
 }
 
 .container {
@@ -58,6 +63,20 @@ span {
   margin-left: .5rem;
 }
 
+button:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
 /***** HEADER *****/
 header {
   margin-top: 3rem;
@@ -74,7 +93,7 @@ main {
 
 form {
   padding: 1rem 2rem;
-  border: 1px solid black;
+  border: 2px solid var(--secondary-color);
   border-radius: 1rem;
 }
 
@@ -109,10 +128,12 @@ form {
 
 .form-button {
   width: 100%;
-  border: 1px solid black;
+  border: 2px solid var(--primary-color);
   border-radius: .2rem;
   padding: .625rem;
+  color: white;
   text-transform: uppercase;
+  background-color: var(--secondary-color);
 }
 
 /***** FOOTER *****/
