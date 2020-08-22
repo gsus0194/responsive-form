@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/base.css">
-  <link rel="stylesheet" href="./styles/over600.css">
-  <link rel="stylesheet" href="./styles/over960.css">
-  <link rel="stylesheet" href="./styles/over1280.css">
+  <link rel="stylesheet" media="screen and (min-width:960px)" href="./styles/over960.css">
   <title>Game Survey</title>
 </head>
 
@@ -23,22 +21,22 @@
   <main>
     <div class="container">
       <form id="form-survey">
-        <div class="form-group">
+        <div class="form-group form-name">
           <label class="form-label" for="name">Name</label>
           <input class="form-control" type="text" name="name" id="name" placeholder="Your Name" required>
         </div>
 
-        <div class="form-group">
+        <div class="form-group form-email">
           <label class="form-label" for="email">Email</label>
           <input class="form-control" type="email" name="email" id="email" placeholder="Your Email">
         </div>
 
-        <div class="form-group">
+        <div class="form-group form-birthday">
           <label class="form-label" for="birthday">Birthday:</label>
           <input class="form-control" type="date" id="birthday" name="birthday" max="2017-12-31" min="1940-01-01">
         </div>
 
-        <div class="form-group">
+        <div class="form-group form-gender">
           <p class="form-label">Gender</p>
           <label for="male">
             <input class="input-radio" type="radio" id="male" name="gender" value="male"> Male
@@ -51,7 +49,7 @@
           </label>
         </div>
 
-        <div class="form-group">
+        <div class="form-group form-phone">
           <p class="form-label">What type of smartphone do you use?</p>
           <select class="form-control" name="smartphone" id="dropdown">
             <option disabled selected>Select your type</option>
@@ -62,7 +60,7 @@
           </select>
         </div>
 
-        <div class="form-group">
+        <div class="form-group form-yesno">
           <p class="form-label">Have you ever played a Sonic game?</p>
           <label for="yes">
             <input class="input-radio" type="radio" name="yes-no" id="yes"> Yes
@@ -72,7 +70,7 @@
           </label>
         </div>
 
-        <div class="form-group">
+        <div class="form-group form-platform">
           <p class="form-label">Select the platform you currently own</p>
           <label for="xbox">
             <input class="input-checkbox" type="checkbox" name="platform" id="xbox"> Xbox
@@ -91,7 +89,7 @@
           </label>
         </div>
 
-        <div class="form-group">
+        <div class="form-group form-genre">
           <p class="form-label">Select the game genre you like</p>
           <label for="action">
             <input class="input-checkbox" type="checkbox" name="game-genre" id="action"> Action
@@ -116,12 +114,12 @@
           </label>
         </div>
 
-        <div class="form-group">
+        <div class="form-group form-suggestion">
           <p class="form-label area-label">Any suggestion for gameplay? <span>(Optional)</span></p>
           <textarea class="input-textarea" name="suggestion" id="suggestion" placeholder="Enter you suggestions here."></textarea>
         </div>
 
-        <div class="form-group">
+        <div class="form-group form-btn">
           <button class="form-button" name="submit" id="submit" type="submit">submit</button>
         </div>
       </form>
